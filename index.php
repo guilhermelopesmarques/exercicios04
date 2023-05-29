@@ -7,10 +7,36 @@
     <title>exercicio04</title>
 </head>
 <body>
-    <form>
-    Coloque seu Número:
-    <input type="int" name="numero">
+<form method="POST">
 
-    </form>
+Escreva o Número
+
+<input type="number" name="numero">
+<button type="submit" name="verificar">verificar</button>
+
+</form>
+
+<?php
+
+if (isset($_POST['verificar'])){
+
+$numero = $_POST["numero"];
+
+
+
+
+if ($numero % 2 == 0){
+
+echo "O número é par!";
+
+} else {
+
+echo "O número é ímpar!";
+
+}
+
+}
+
+?>
 </body>
 </html>
