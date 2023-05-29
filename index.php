@@ -22,9 +22,6 @@ if (isset($_POST['verificar'])){
 
 $numero = $_POST["numero"];
 
-
-
-
 if ($numero % 2 == 0){
 
 echo "O número é par!";
